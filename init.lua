@@ -242,7 +242,6 @@ require("lazy").setup({
   "preservim/nerdtree",
   "pangloss/vim-javascript",
   "HerringtonDarkholme/yats.vim",
-  "sheerun/vim-polyglot",
   "neoclide/coc.nvim",
   "alvan/vim-closetag",
   -- Use `opts = {}` to force a plugin to be loaded.
