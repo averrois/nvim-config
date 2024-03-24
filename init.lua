@@ -233,10 +233,10 @@ require("lazy").setup({
 	-- keys can be used to configure plugin behavior/loading/etc.
 	--
 	-- Codeium plugin
-	{ "Exafunction/codeium.vim", opts = {} },
-
+	"Exafunction/codeium.vim",
 	-- Prettier plugin
-	{ "prettier/vim-prettier", opts = {} },
+	"prettier/vim-prettier",
+	--{"prettier/vim-prettier", opts = {}},
 	-- Use `opts = {}` to force a plugin to be loaded.
 	--
 	--  This is equivalent to:
