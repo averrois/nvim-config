@@ -567,6 +567,19 @@ require("lazy").setup({
 							-- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
 							-- diagnostics = { disable = { 'missing-fields' } },
 						},
+						volar = {},
+						tsserver = {
+							filetypes = { "javascript", "typescript", "vue" },
+							init_options = {
+								plugins = {
+									{
+										name = "@vue/typescript-plugin",
+										location = "/Users/wai-lin/Library/pnpm/nodejs/20.11.1/lib/node_modules/@vue/typescript-plugin",
+										languages = { "javascript", "typescript", "vue" },
+									},
+								},
+							},
+						},
 					},
 				},
 			}
