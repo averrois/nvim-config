@@ -4,6 +4,7 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
+  "codeium.vim": { "branch": "main", "commit": "2a655ab89fe0158a049062683f9513745a9bead6" },
   "conform.nvim": { "branch": "master", "commit": "9d5ba06d6ee7418c674f498634617416d15b6239" },
   "fidget.nvim": { "branch": "main", "commit": "933db4596e4bab1b09b6d48a10e21819e4cc458f" },
   "gitsigns.nvim": { "branch": "main", "commit": "078041e9d060a386b0c9d3a8c7a7b019a35d3fb0" },
