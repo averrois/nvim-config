@@ -4,6 +4,9 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
 
+-- NOTE setup leader key
+vim.g.mapleader = " "
+
 -- NOTE Here it checkes if Lazy installed if not install it
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
