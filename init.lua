@@ -1,5 +1,4 @@
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
@@ -23,7 +22,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "olimorris/onedarkpro.nvim", priority = 1000 },
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     dependencies = { 'nvim-lua/plenary.nvim' }
@@ -34,9 +33,9 @@ local opts = {}
 
 require("lazy").setup(plugins, opts)
 
-require("catppuccin").setup()
+-- require("onedark").setup()
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "onedark"
 
 -- NOTE Telescope nvim config
 local builtin = require('telescope.builtin')
@@ -50,6 +49,6 @@ local configs = require("nvim-treesitter.configs")
 configs.setup({
   ensure_installed = { "c", "lua", "vim", "vimdoc", "javascript", "html", "css" },
   highlight = { enable = true },
-  indent = { enable = true },)
+  indent = { enable = true }
 })
 
