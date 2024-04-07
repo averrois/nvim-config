@@ -54,6 +54,8 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+-- Key maps for neo-vim tree
+vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal left<CR>', {})
 
 local configs = require("nvim-treesitter.configs")
 configs.setup({
