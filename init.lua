@@ -46,3 +46,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+local configs = require("nvim-treesitter.configs")
+configs.setup({
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+  highlight = { enable = true },
+  indent = { enable = true },)
+})
+
