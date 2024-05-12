@@ -1,8 +1,3 @@
-vim.cmd("set expandtab")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set relativenumber")
-
 -- NOTE setup leader key
 vim.g.mapleader = " "
 
@@ -25,6 +20,5 @@ local opts = {}
 
 -- require("onedark").setup()
 
+require("vim-options")
 require("lazy").setup("plugins")
-
-

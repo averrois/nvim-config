@@ -10,6 +10,6 @@ return {
   },
   config = function()
     -- Key maps for neo-vim tree
-    vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal left<CR>', {})
+    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
   end
 }
