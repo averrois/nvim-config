@@ -18,6 +18,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
+      lspconfig.ast_grep.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.vuels.setup({})
       lspconfig.html.setup({})

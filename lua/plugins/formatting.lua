@@ -8,7 +8,7 @@ return {
         sources = {
           null_ls.builtins.formatting.prettier.with({
             filetypes = {
-              "javascript", "typescript", "css", "scss", "html", "json", "yaml", "markdown", "vue"
+              "javascript", "go", "typescript", "css", "scss", "html", "json", "yaml", "markdown", "vue"
             },
           }),
         },
@@ -18,7 +18,7 @@ return {
       vim.cmd([[
         augroup AutoFormat
           autocmd!
-          autocmd BufWritePre *.js,*.ts,*.jsx,*.tsx,*.css,*.scss,*.html,*.json,*.vue lua vim.lsp.buf.format()
+          autocmd BufWritePre *.go, *.js,*.ts,*.jsx,*.tsx,*.css,*.scss,*.html,*.json,*.vue lua vim.lsp.buf.format()
         augroup END
       ]])
     end
