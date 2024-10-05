@@ -1,9 +1,11 @@
 
 # My Neovim Config
 
+> Special thanks to [@typecraft_dev](https://x.com/typecraft_dev) for the inspiration and insights that made this configuration possible.
+
 ![Neovim Home Screen](https://raw.githubusercontent.com/averrois/nvim-config/refs/heads/master/.github/screeshots/Screenshots.png?token=GHSAT0AAAAAACR7ZOYLFTZ7P2BK5NLFQGZUZYBUYAA)
 
-This is my personal Neovim configuration, designed for a smooth and efficient coding experience. It's built using [lazy](http://www.lazyvim.org/) with a focus on Git integration, LSP support, and a sleek appearance using the [Poimandres](https://github.com/olivercederborg/poimandres.nvim) color scheme.
+This is my personal [Neovim](https://neovim.io/) configuration, designed for a smooth and efficient coding experience. It's built using [lazy](http://www.lazyvim.org/) with a focus on Git integration, LSP support, and a sleek appearance using the [Poimandres](https://github.com/olivercederborg/poimandres.nvim) color scheme.
 
 ## Installation
 
