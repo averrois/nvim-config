@@ -4,12 +4,14 @@ return {
 	lazy = false,
 	priority = 1000,
 	config = function()
-		require("poimandres").setup({
-			-- leave this setup function empty for default config
-			-- or refer to the configuration section
-			-- for configuration options
-		})
-	end,
+    require('poimandres').setup {
+      bold_vert_split = false,
+      dim_nc_background = false,
+      disable_background = false,
+      disable_float_background = false,
+      disable_italics = false,
+    }
+  end,
 
 	-- optionally set the colorscheme within lazy config
 	init = function()
