@@ -1,7 +1,7 @@
 
 # My Neovim Config
 
-![Neovim Home Screen](https://raw.githubusercontent.com/averrois/nvim-config/master/.github/screeshots/Screenshots.png)
+![Neovim Home Screen](https://raw.githubusercontent.com/averrois/nvim-config/refs/heads/master/.github/screeshots/Screenshots.png?token=GHSAT0AAAAAACR7ZOYLFTZ7P2BK5NLFQGZUZYBUYAA)
 
 This is my personal Neovim configuration, designed for a smooth and efficient coding experience. It's built using [lazy](http://www.lazyvim.org/) with a focus on Git integration, LSP support, and a sleek appearance using the Poimandres color scheme.
 
