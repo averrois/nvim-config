@@ -26,16 +26,17 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({})
-			lspconfig.gopls.setup({})
-			lspconfig.cssls.setup({})
-			lspconfig.bashls.setup({})
-			lspconfig.html.setup({})
-			lspconfig.tsserver.setup({})
-			lspconfig.tailwindcss.setup({})
-			lspconfig.vuels.setup({})
-			lspconfig.jsonls.setup({})
+			lspconfig.lua_ls.setup({ capabilities = capabilities })
+			lspconfig.gopls.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.bashls.setup({ capabilities = capabilities })
+			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.tailwindcss.setup({ capabilities = capabilities })
+			lspconfig.vuels.setup({ capabilities = capabilities })
+			lspconfig.jsonls.setup({ capabilities = capabilities })
 
 			-- Key Binding --
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
