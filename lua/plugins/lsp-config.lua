@@ -15,7 +15,7 @@ return {
 					"cssls",
 					"bashls",
 					"html",
-					"tsserver",
+					"ts_ls",
 					"tailwindcss",
 					"vuels",
 					"jsonls",
@@ -33,7 +33,7 @@ return {
 			lspconfig.cssls.setup({ capabilities = capabilities })
 			lspconfig.bashls.setup({ capabilities = capabilities })
 			lspconfig.html.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.tailwindcss.setup({ capabilities = capabilities })
 			lspconfig.vuels.setup({ capabilities = capabilities })
 			lspconfig.jsonls.setup({ capabilities = capabilities })
