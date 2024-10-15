@@ -16,8 +16,7 @@ return {
 				"typescript",
 				"bash",
 				"javascript",
-				"html",
-        "markdown",
+				"html"
 			},
 			sync_install = false,
 			highlight = { enable = true },
