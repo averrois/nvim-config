@@ -17,6 +17,7 @@ return {
 				"bash",
 				"javascript",
 				"html",
+        "markdown",
 			},
 			sync_install = false,
 			highlight = { enable = true },
