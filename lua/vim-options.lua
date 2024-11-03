@@ -11,3 +11,7 @@ vim.opt.relativenumber = true
 
 -- Always show sign column to prevent text shifting
 vim.opt.signcolumn = "yes"  -- or "no" if you want to disable it completely
+
+-- Prevent swap
+vim.opt.swapfile = false
+
