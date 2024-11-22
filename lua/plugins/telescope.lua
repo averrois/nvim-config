@@ -47,11 +47,20 @@ return {
 						theme = "dropdown",
 						previewer = false,
 					},
+					vertical_find_files = { -- New picker configuration
+						theme = "dropdown",
+						previewer = false,
+						hidden = true,
+						attach_mappings = function(_, map)
+							map("i", "<CR>", actions.file_vsplit)
+							map("n", "<CR>", actions.file_vsplit)
+							return true
+						end,
+					},
 				},
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({
-							-- even more opts
 							initial_mode = "normal",
 							sorting_strategy = "ascending",
 							layout_strategy = "horizontal",
@@ -68,10 +77,23 @@ return {
 			})
 
 			local builtin = require("telescope.builtin")
+
+			-- Regular file finding
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+
+			-- Vertical split file finding
+			vim.keymap.set("n", "<leader>vff", function()
+				builtin.find_files({
+					attach_mappings = function(_, map)
+						map("i", "<CR>", actions.file_vsplit)
+						map("n", "<CR>", actions.file_vsplit)
+						return true
+					end,
+				})
+			end, { desc = "Find files (vertical split)" })
 
 			require("telescope").load_extension("ui-select")
 		end,
