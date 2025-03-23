@@ -17,7 +17,7 @@ return {
           "html",
           "ts_ls",
           "tailwindcss",
-          "vuels",
+          "volar",
           "jsonls",
         },
       })
@@ -59,7 +59,7 @@ return {
         "html",
         "ts_ls",
         "tailwindcss",
-        "vuels",
+        "volar",
         "jsonls",
       }
 
